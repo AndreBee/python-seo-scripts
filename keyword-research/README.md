@@ -19,7 +19,7 @@ To make the script work, you need to install two dependencies, namely Pandas and
         
 You will need an API key to use the script, which you can get at https://keywordtool.io
 
-
+Note that you can use the sandbox endpoint while testing, so that you don't waste API credits. Just uncomment the test endpoint and comment the production one.
 
 ## API limits and settings
 
