@@ -6,6 +6,8 @@ The keyword suggester is a simple python script that makes calls to Keywordtool.
 
 You can feed it with a .csv file containing a list of keywords - one per line - and it will produce a new file in .xlsx format with all the suggestions for those keywords, together with their monthly search volume.
 
+
+
 ## Get started
 
 To make the script work, you need to install two dependencies, namely Pandas and requests.
@@ -16,6 +18,7 @@ To make the script work, you need to install two dependencies, namely Pandas and
         $ pip install requests
         
 You will need an API key to use the script, which you can get at https://keywordtool.io
+
 
 
 ## API limits and settings
