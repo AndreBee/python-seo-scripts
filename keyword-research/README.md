@@ -15,9 +15,9 @@ To make the script work, you need to install two dependencies, namely Pandas and
         
         $ pip install requests
         
-You will need an API key to use the script, which you can get at https://keywordtool.io - automatic!
+You will need an API key to use the script, which you can get at https://keywordtool.io
 
 
 ## API limits and settings
 
-Please refer to the API docs at https://keywordtool.io - automatic! to know about API limits and settings.
+Please refer to the API docs at https://keywordtool.io to know about API limits and settings.
