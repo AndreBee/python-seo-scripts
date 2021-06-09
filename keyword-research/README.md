@@ -1,4 +1,4 @@
-# Keyword suggester built upon Keywordtool.io API
+# Google keyword suggester powered by Keywordtool.io API
 
 ## What does it do?
 
