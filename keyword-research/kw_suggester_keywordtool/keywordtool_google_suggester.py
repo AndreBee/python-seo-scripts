@@ -67,7 +67,6 @@ def get_suggestions(api_key, settings):
                 }
 
                 kw_suggestions_df = kw_suggestions_df.append(data, ignore_index=True).drop_duplicates(subset=['keyword']).sort_values(by=['volume'], ascending=False)
-        print(kw_suggestions_df)
         return kw_suggestions_df
     
 
