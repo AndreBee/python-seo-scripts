@@ -25,8 +25,12 @@ Note that you can use the sandbox endpoint while testing, so that you don't wast
 
 Once you have downloaded the script and installed the dependencies you can do the following:
 
-- Create a new .csv file with a list of keywords to get suggestions for, one keyword per line. Save the file and include the path in the script.
-- On the terminal, just run '''python keywordtool_google_suggester.py''' and follow the progress on the screen until the output file is generated.
+1) Create a new .csv file with a list of keywords to get suggestions for, one keyword per line. Save the file and include the path in the script.
+2) On the terminal, just run:
+
+                python keywordtool_google_suggester.py
+                
+3) Follow the progress on the screen until the output file is generated.
 
 ## API limits and settings
 
