@@ -21,6 +21,13 @@ You will need an API key to use the script, which you can get at https://keyword
 
 Note that you can use the sandbox endpoint while testing, so that you don't waste API credits. Just uncomment the test endpoint and comment the production one.
 
+## How to use the script
+
+Once you have downloaded the script and installed the dependencies you can do the following:
+
+- Create a new .csv file with a list of keywords to get suggestions for, one keyword per line. Save the file and include the path in the script.
+- On the terminal, just run '''python keywordtool_google_suggester.py''' and follow the progress on the screen until the output file is generated.
+
 ## API limits and settings
 
 Please refer to the API docs at https://keywordtool.io to know about API limits and settings.
