@@ -15,7 +15,7 @@ In order to make these scripts work, you need to install two dependencies, as fo
 
 # How the scripts work
 
-Both the rising keywords and the interest over time generators accept a .csv file as an input with a list of seed keywords, one per line.
+Both the rising_kws and the interest_over_time scripts accept a .csv file as an input with a list of seed keywords, one per line.
 Then, the scripts get data from Google Trends and generate a unique final .xlsx file with the output.
 
 Note: if you check a lot of keywords in bulk you might reach the limit and won't be able to retrieve data as the scripts are not handling rate limit at the moment.
