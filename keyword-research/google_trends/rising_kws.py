@@ -33,20 +33,26 @@ def get_rising_keywords(kw, timeframe, geo):
         all_related_queries = all_related_queries.append(related_queries)
     
     return all_related_queries
+
+
+def rising():
+
+    rising_final_df = pd.DataFrame()
+
+    print("** Getting rising queries from seed keywords... ** ")
+    with open(input_doc, newline='') as csvfile:
+            for kw in csvfile:
+                print(f"> Getting rising queries for seed kw: {kw}")
+                related_kws = get_rising_keywords([kw], timeframe, geo)
+                rising_final_df = rising_final_df.append(related_kws, ignore_index=True)
+
+
+
+    filename = f"rising_kws_{time.strftime('%Y%m%d-%H%M%S')}.xlsx"
+    rising_final_df.to_excel(filename)
+    print(f"** Results saved to Excel file: {filename} ** ")
+
     
-    
-rising_final_df = pd.DataFrame()
-
-print("** Getting rising queries from seed keywords... ** ")
-with open(input_doc, newline='') as csvfile:
-        for kw in csvfile:
-            print(f"> Getting rising queries for seed kw: {kw}")
-            related_kws = get_rising_keywords([kw], timeframe, geo)
-            rising_final_df = rising_final_df.append(related_kws, ignore_index=True)
-
-                   
-filename = f"rising_kws_{time.strftime('%Y%m%d-%H%M%S')}.xlsx"
-rising_final_df.to_excel(filename)
-print(f"** Results saved to Excel file: {filename} ** ")
-
+if __name__ == '__main__':
+    rising()
 
