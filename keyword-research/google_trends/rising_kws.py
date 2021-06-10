@@ -35,10 +35,6 @@ def get_rising_keywords(kw, timeframe, geo):
     return all_related_queries
     
     
-def get_search_volume(keyword, geo):
-    '''Checks MSV using keywordtool.io API'''
-    pass
-
 rising_final_df = pd.DataFrame()
 
 print("** Getting rising queries from seed keywords... ** ")
