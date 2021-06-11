@@ -2,7 +2,6 @@ import time
 import pandas as pd                        
 from pytrends.request import TrendReq
 
-pd.set_option('expand_frame_repr', False)
 
 input_doc = 'keywords.csv' # a csv file with one keyword per line
 timeframe = 'now 7-d' # Check TrendReq library for other time frames
