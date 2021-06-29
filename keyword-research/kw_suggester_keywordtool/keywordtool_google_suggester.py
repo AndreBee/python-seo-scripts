@@ -1,5 +1,4 @@
 import json
-import csv
 import requests
 import pandas as pd
 import time
