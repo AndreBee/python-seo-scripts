@@ -19,6 +19,7 @@ def get_rising_keywords(kw, timeframe, geo):
     # get related queries
     try:
         related_queries_dict = pytrend.related_queries()
+        print(related_queries_dict)
     except:
         print("An error occured, please try again later.")
 
@@ -26,10 +27,12 @@ def get_rising_keywords(kw, timeframe, geo):
     
     # loop through related queries and get rising value
     for query in related_queries_dict:
-        related_queries = related_queries_dict[query].get('rising')
-        related_queries['seed_kw'] = query
-        related_queries = related_queries.rename(columns = {'value': 'rising (%)'}, inplace = False)
-        all_related_queries = all_related_queries.append(related_queries)
+        if related_queries_dict[query].get('rising') is not None:
+            related_queries = related_queries_dict[query].get('rising')
+
+            related_queries['seed_kw'] = query
+            related_queries = related_queries.rename(columns = {'value': 'rising (%)'}, inplace = False)
+            all_related_queries = all_related_queries.append(related_queries)
     
     return all_related_queries
 
@@ -54,4 +57,3 @@ def rising():
     
 if __name__ == '__main__':
     rising()
-
